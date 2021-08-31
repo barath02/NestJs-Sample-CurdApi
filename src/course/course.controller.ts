@@ -24,6 +24,8 @@ export class CourseController {
         return course;
     }
 
+    
+
     @Delete()
     async deleteCourse(@Query() query) {
         const course = await this.courseService.deleteCourse(query.courseId);
