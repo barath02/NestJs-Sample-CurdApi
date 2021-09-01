@@ -17,6 +17,7 @@ export class CourseController {
         const course = await this.courseService.getCourse(courseId);
         return course;
     }
+    
 
     @Post()
     async addCourse(@Body() createCourseDto: CreateCourseDto) {
@@ -24,7 +25,7 @@ export class CourseController {
         return course;
     }
 
-    
+
 
     @Delete()
     async deleteCourse(@Query() query) {
